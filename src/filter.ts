@@ -1,8 +1,11 @@
-export default function filter<T>(list: T[], predicate: (arg: T) => boolean) {
+export default function filter<T>(
+  list: T[],
+  predicate: (arg: T, idx?: number, list?: T[]) => boolean,
+) {
   const newList: T[] = [];
 
   for (let i = 0; i < list.length; i++) {
-    if (predicate(list[i])) newList.push(list[i]);
+    if (predicate(list[i], i, list)) newList.push(list[i]);
   }
 
   return newList;
