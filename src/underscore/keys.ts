@@ -1,6 +1,5 @@
-import map from "./map";
-import _args1 from "./_args1";
+import isObject from "./isObject";
 
 export default function keys(obj: any) {
-  return map(obj, _args1);
+  return isObject(obj) ? Object.keys(obj) : [];
 }
