@@ -15,7 +15,7 @@ export default function map(data: any, iteratee: Function) {
   const newList = [];
   if (isArrayLike(data)) {
     for (let i = 0; i < data.length; i++) {
-      newList.push(iteratee(data[i], i, data));
+      newList.push(iteratee(data[i], i, data)); // 전달받은 보조함수에 데이터를 넣어 실행, 결과를 새로운 리스트에 푸시.
     }
   } else {
     for (const key in data) {
