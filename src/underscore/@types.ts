@@ -42,3 +42,5 @@ export interface CollectionIterator<
 > {
   (arg: T, key: CollectionKey<V>, collection: V): TResult;
 }
+
+export type GeneralFucntion = <Return>(...args: any) => Return;
