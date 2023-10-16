@@ -1,26 +1,19 @@
 {
-  "name": "functs",
-  "version": "1.0.0",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "source": "src/index.ts",
-  "exports": {
-    "default": "./dist/index.js",
-    "require": "./dist/index.cjs"
+  "name": "functional-ts",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
   },
-  "files": [
-    "src"
-  ],
-  "author": "leejss",
-  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "scripts": {
     "test": "vitest"
   },
-  "devDependencies": {
-    "@types/underscore": "^1.11.4",
-    "microbundle": "^0.15.1",
-    "typescript": "^4.9.4",
+  "dependencies": {
+    "@types/underscore": "^1.11.11",
     "underscore": "^1.13.6",
-    "vitest": "^0.25.8"
+    "vitest": "^0.34.6"
   }
 }
