@@ -9,10 +9,11 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "test": "vitest"
+    "test": "bun test --only"
   },
   "dependencies": {
     "@types/underscore": "^1.11.11",
+    "fp-ts": "^2.16.1",
     "underscore": "^1.13.6",
     "vitest": "^0.34.6"
   }
